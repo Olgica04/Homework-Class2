@@ -1,17 +1,15 @@
 ﻿Console.Write("Enter your first number: ");
 string input1 = Console.ReadLine();
-//int firstNumber = Convert.ToInt32(input1);
-bool succes1= int.TryParse(input1, out int firstNumber);
+bool succes1= float.TryParse(input1, out float firstNumber);
 
 Console.Write("Enter your second number: ");
 string input2 = Console.ReadLine();
-//int secondnumber = Convert.ToInt32(input2);
-bool succes2 = int.TryParse(input2, out int secondNumber);
+bool succes2 = float.TryParse(input2, out float secondNumber);
 
 Console.Write("Enter your operation: ");
 string operation = Console.ReadLine();
 
-int result;
+float result;
 
 switch (operation)
 {
