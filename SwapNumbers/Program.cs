@@ -6,12 +6,19 @@ Console.Write("Input the Second number: ");
 string input2 = Console.ReadLine();
 bool succes2 = int.TryParse(input2, out int secondNumber);
 
-int temp;
+if (succes1 && succes2)
+{
+    int temp;
 
-temp = firstNumber;
-firstNumber = secondNumber;
-secondNumber = temp;
+    temp = firstNumber;
+    firstNumber = secondNumber;
+    secondNumber = temp;
 
-Console.WriteLine("After swaping: ");
-Console.WriteLine("First Number: " + firstNumber);
-Console.WriteLine("Second Number: " + secondNumber);
+    Console.WriteLine("After swaping: ");
+    Console.WriteLine("First Number: " + firstNumber);
+    Console.WriteLine("Second Number: " + secondNumber);
+}
+else
+{
+    Console.WriteLine("Invalid input! Please enter a valid number!");
+}

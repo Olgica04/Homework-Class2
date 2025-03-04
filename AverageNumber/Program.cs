@@ -14,8 +14,16 @@ Console.Write("Enter your fourth number: ");
 string input4 = Console.ReadLine();
 bool succes4 = double.TryParse(input4, out double fourthNumber);
 
-double average;
+if (succes1 && succes2 && succes3 && succes4)
+{
 
-average = (firstNumber + secondNumber + thirdNumber + fourthNumber) / 4;
+    double average;
 
-Console.WriteLine("The average of " + firstNumber + ", " + secondNumber + ", " + thirdNumber + " and " + fourthNumber + " is: " + average);
+    average = (firstNumber + secondNumber + thirdNumber + fourthNumber) / 4;
+
+    Console.WriteLine("The average of " + firstNumber + ", " + secondNumber + ", " + thirdNumber + " and " + fourthNumber + " is: " + average);
+}
+else
+{
+    Console.WriteLine("Invalid input! Please enter a valid number!");
+}
