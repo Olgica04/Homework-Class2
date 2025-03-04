@@ -1,20 +1,20 @@
 ﻿Console.Write("Enter your first number: ");
 string input1 = Console.ReadLine();
-bool succes1 = double.TryParse(input1, out double firstNumber);
+bool success1 = double.TryParse(input1, out double firstNumber);
 
 Console.Write("Enter your second number: ");
 string input2 = Console.ReadLine();
-bool succes2 = double.TryParse(input2, out double secondNumber);
+bool success2 = double.TryParse(input2, out double secondNumber);
 
 Console.Write("Enter your third number: ");
 string input3 = Console.ReadLine();
-bool succes3 = double.TryParse(input3, out double thirdNumber);
+bool success3 = double.TryParse(input3, out double thirdNumber);
 
 Console.Write("Enter your fourth number: ");
 string input4 = Console.ReadLine();
-bool succes4 = double.TryParse(input4, out double fourthNumber);
+bool success4 = double.TryParse(input4, out double fourthNumber);
 
-if (succes1 && succes2 && succes3 && succes4)
+if (success1 && success2 && success3 && success4)
 {
 
     double average;
